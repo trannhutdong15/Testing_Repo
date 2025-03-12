@@ -8,8 +8,14 @@ public class MathUtils {
         return num * num * num;
     }
 
+    public static double power(int base, int exponent) {
+        return Math.pow(base, exponent);
+    }
+
     public static void main(String[] args) {
-        System.out.println("Square of 4: " + square(4));
-        System.out.println("Cube of 3: " + cube(3));
+        int num1 = 4, num2 = 3;
+        System.out.println("Square of " + num1 + ": " + square(num1));
+        System.out.println("Cube of " + num2 + ": " + cube(num2));
+        System.out.println(num1 + " raised to the power of " + num2 + ": " + power(num1, num2));
     }
 }
